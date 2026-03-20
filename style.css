@@ -34,7 +34,7 @@ body {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,11 +85,26 @@ body {
 /* Category Chips */
 .categories {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 2rem;
   max-width: 1200px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 0.5rem; /* Space for hidden scrollbar */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
+}
+
+.categories::-webkit-scrollbar {
+  display: none; /* Hide scrollbar Chrome/Safari */
+}
+
+@media (min-width: 901px) {
+  .categories {
+    justify-content: center;
+  }
 }
 
 .category-chip {
@@ -103,6 +118,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
+  flex-shrink: 0; /* prevent chips from shrinking */
 }
 
 .category-chip i {
@@ -341,7 +357,17 @@ body {
   }
 
   .info-cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .icon-wrapper {
+    width: 35px;
+    height: 35px;
+  }
+
+  .icon-wrapper i {
+    font-size: 1rem;
   }
 
   .cta-button {
@@ -350,6 +376,9 @@ body {
 
   .btn-title {
     font-size: 1.2rem;
+  }
+  .categories {
+    margin-bottom: 1rem; /* keep centered on desktop where it probably doesn't overflow */
   }
 }
 
@@ -371,7 +400,6 @@ body {
   line-height: 1.1;
   margin-bottom: 2.5rem;
   letter-spacing: -0.5px;
-   
 }
 
 .familiar-grid {
@@ -455,7 +483,7 @@ body {
     padding: 1.5rem;
   }
   .section-heading {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -644,6 +672,10 @@ body {
   .who-card {
     width: 100%; /* 1 column on mobile */
   }
+  .solution-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 /* --- Section 5: Curriculum Section --- */
@@ -760,7 +792,7 @@ body {
     grid-template-columns: 1fr;
   }
   .curriculum-heading {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -794,12 +826,20 @@ body {
 }
 
 .ba-card-red {
-  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(26, 10, 10, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(239, 68, 68, 0.08) 0%,
+    rgba(26, 10, 10, 0.6) 100%
+  );
   border: 1px solid rgba(239, 68, 68, 0.15);
 }
 
 .ba-card-yellow {
-  background: linear-gradient(135deg, rgba(255, 193, 7, 0.08) 0%, rgba(26, 22, 0, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 193, 7, 0.08) 0%,
+    rgba(26, 22, 0, 0.6) 100%
+  );
   border: 1px solid rgba(255, 193, 7, 0.15);
 }
 
@@ -863,6 +903,9 @@ body {
     grid-template-columns: 1fr;
     gap: 4.5rem; /* More gap for the overlapping badge spacing */
   }
+  .ba-heading {
+    font-size: 1.45rem;
+  }
 }
 
 /* --- Section 7: Outcomes Section --- */
@@ -873,11 +916,6 @@ body {
 
 .container-outcomes {
   align-items: center;
-}
-
-.Workshop{
-    width: 900px;
-    margin-bottom: 1.5rem;
 }
 
 .outcomes-list {
@@ -958,8 +996,12 @@ body {
 }
 
 @media (max-width: 600px) {
+  .status-pills {
+    margin-bottom: 1.5rem;
+  }
   .conclusion-statement {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
   }
   .status-pill {
     padding: 0.5rem 1.5rem;
@@ -1047,7 +1089,6 @@ body {
   font-size: 1.15rem;
   color: #ffffff;
   line-height: 1.6;
- 
 }
 
 @media (max-width: 900px) {
@@ -1061,7 +1102,7 @@ body {
     margin: 0 auto;
   }
   .trainer-heading {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1139,7 +1180,7 @@ body {
 
 @media (max-width: 768px) {
   .offer-heading {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
   .feature-row {
     flex-direction: column;
@@ -1210,7 +1251,9 @@ body {
   padding: 0 2rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
 }
 
 .faq-answer p {
@@ -1226,15 +1269,24 @@ body {
   /* Change plus to an 'x' on open */
   transform: rotate(45deg);
 }
+.small-btn {
+  font-size: 1.4rem;
+}
 
 @media (max-width: 768px) {
   .faq-heading {
-    font-size: 2.8rem;
+    font-size: 1.6rem;
   }
   .faq-question {
-    padding: 1.2rem 1.5rem;
-    font-size: 1.05rem;
+    padding: 1.2rem 1.2rem;
+    font-size: 1rem;
   }
+  .faq-answer p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.5rem 0;
+  }
+ 
 }
 
 /* --- Footer --- */
@@ -1268,4 +1320,166 @@ body {
 .footer-copyright p {
   font-size: 0.95rem;
   color: #ffffff;
+}
+
+/* === GLOBAL RESPONSIVENESS PATCH === */
+/* Tablet & below */
+@media (max-width: 900px) {
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+  .category-chip {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.85rem;
+  }
+  .requirements {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .req-item {
+    font-size: 0.9rem;
+  }
+  .top-badge {
+    padding: 0.4rem 2rem;
+  }
+  .cta-button {
+    padding: 1.2rem 1rem;
+  }
+  .btn-title {
+    font-size: 1.4rem;
+  }
+  .btn-subtitle {
+    font-size: 1rem;
+  }
+  .highlight-box .box-main {
+    font-size: 1.15rem;
+  }
+  .highlight-box .box-sub {
+    font-size: 1rem;
+  }
+  .solution-subheading {
+    font-size: 1.15rem;
+  }
+  .outcome-bar {
+    padding: 1rem;
+  }
+  .outcome-bar p {
+    font-size: 1rem;
+  }
+  .conclusion-box {
+    padding: 2rem 1.5rem;
+  }
+  .conclusion-title {
+    font-size: 1.2rem;
+  }
+  .trainer-title {
+    font-size: 1.5rem;
+  }
+  .trainer-desc,
+  .trainer-quote,
+  .experience-title {
+    font-size: 1.05rem;
+  }
+  .experience-box {
+    padding: 1.5rem;
+  }
+  .offer-box {
+    padding: 2.5rem 1.5rem;
+  }
+  .offer-text {
+    font-size: 1.15rem;
+  }
+  .offer-subheading {
+    font-size: 1.1rem;
+  }
+  .curriculum-subheading {
+    font-size: 1.1rem;
+  }
+  
+}
+
+/* Mobile specifically */
+@media (max-width: 600px) {
+  .hero-section {
+    padding-top: 1rem;
+  }
+  .top-badge {
+    padding: 0.4rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  .category-chip {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+  .video-thumbnail {
+    height: 200px;
+    min-height: 200px;
+  }
+  .video-container {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+  .info-card {
+    padding: 0.8rem 1rem;
+  }
+  .card-text .value {
+    font-size: 0.95rem;
+  }
+  .card-text .label {
+    font-size: 0.75rem;
+  }
+  .cta-button {
+    padding: 1rem 0.5rem;
+  }
+  .btn-title {
+    font-size: 1.2rem !important; /* Override inline styles */
+  }
+  .btn-subtitle {
+    font-size: 0.9rem;
+  }
+  .familiar-card {
+    padding: 1.2rem;
+  }
+  .compare-card {
+    padding: 1.5rem;
+  }
+  .compare-title {
+    font-size: 1.1rem;
+  }
+  .compare-list li {
+    font-size: 1rem;
+  }
+  .module-card {
+    padding: 1.5rem;
+  }
+  .module-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ba-card {
+    padding: 3rem 1.5rem 2rem;
+  }
+  .ba-badge {
+    left: 1.5rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+  .ba-list li {
+    font-size: 1rem;
+  }
+  .feature-row {
+    gap: 1rem;
+  }
+  .offer-feature {
+    font-size: 0.9rem;
+  }
+  .footer-disclaimer {
+    padding: 1.5rem 1rem;
+  }
+  .footer-disclaimer p {
+    font-size: 0.65rem;
+  }
+  .footer-copyright p {
+    font-size: 0.85rem;
+  }
+  
 }
