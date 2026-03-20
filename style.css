@@ -1343,7 +1343,7 @@ body {
 /* Tablet & below */
 @media (max-width: 900px) {
   .sub-heading {
-    font-size: 1.2rem;
+    font-size: 1rem;
       margin-bottom: 1rem;
   }
   .category-chip {
@@ -1500,5 +1500,94 @@ body {
   }
   .footer-copyright p {
     font-size: 0.85rem;
+  }
+}
+
+/* --- Sticky Footer --- */
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 1.5rem 0;
+  z-index: 1000;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+}
+
+.sticky-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-title {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.sticky-timer {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.sticky-btn {
+  background-color: #f30000;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  padding: 1.5rem 3.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(243, 0, 0, 0.4);
+}
+
+.sticky-btn:hover {
+  background-color: #d10000;
+  transform: scale(1.05);
+}
+
+/* Ensure body has bottom padding so footer doesn't hide content */
+body {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 900px) {
+  .sticky-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sticky-footer {
+    padding: 1.5rem 0;
+  }
+  .sticky-title {
+    font-size: 0.95rem;
+  }
+  .sticky-timer {
+    font-size: 0.75rem;
+  }
+  .sticky-btn {
+    padding: 1rem 2rem;
+    font-size: 1.05rem;
+  }
+  body {
+    padding-bottom: 70px;
   }
 }

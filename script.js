@@ -39,5 +39,27 @@ if (playButton && videoThumbnail) {
             });
         });
     });
+
+    // Sticky Footer Countdown Timer
+    const countdownElement = document.getElementById('countdown-timer');
+    if (countdownElement) {
+        let timeParts = countdownElement.textContent.split(':');
+        let minutes = parseInt(timeParts[0], 10);
+        let seconds = parseInt(timeParts[1], 10);
+        let totalSeconds = minutes * 60 + seconds;
+
+        const timerInterval = setInterval(() => {
+            if (totalSeconds <= 0) {
+                clearInterval(timerInterval);
+                return;
+            }
+            totalSeconds--;
+            
+            let m = Math.floor(totalSeconds / 60);
+            let s = totalSeconds % 60;
+            
+            countdownElement.textContent = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }, 1000);
+    }
 });
 
