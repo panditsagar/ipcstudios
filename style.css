@@ -258,7 +258,9 @@ body {
 }
 
 .cta-button {
-    background: linear-gradient(180deg, #ed2e33, #c31318);
+    background: linear-gradient(90deg, #ed2e33 0%, #b31115 50%, #ed2e33 100%);
+    background-size: 200% auto;
+    animation: gradientMove 3s linear infinite, shakeLeftRight 2.5s ease-in-out infinite;
     color: white;
     border: none;
     border-radius: 8px;
@@ -272,12 +274,23 @@ body {
     justify-content: center;
     gap: 0.2rem;
     box-shadow: 0 10px 20px rgba(217, 35, 40, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: box-shadow 0.2s;
 }
 
 .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(217, 35, 40, 0.3);
+    box-shadow: 0 15px 30px rgba(217, 35, 40, 0.4);
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+@keyframes shakeLeftRight {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+    100% { transform: translateX(0); }
 }
 
 .btn-title {
@@ -289,7 +302,7 @@ body {
 .btn-subtitle {
     font-size: 1.1rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255);
 }
 
 /* Responsive adjustments */
