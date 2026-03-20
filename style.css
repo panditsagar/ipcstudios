@@ -644,3 +644,222 @@ body {
     width: 100%; /* 1 column on mobile */
   }
 }
+
+/* --- Section 5: Curriculum Section --- */
+.curriculum-section {
+  padding: 3rem 0;
+  background-color: var(--bg-dark); /* black */
+}
+
+.container-curriculum {
+  align-items: center;
+}
+
+.curriculum-heading {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+.curriculum-subheading {
+  font-size: 1.3rem;
+  color: #e5e5e5;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  max-width: 700px;
+  font-weight: 400;
+}
+
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1150px;
+  margin-bottom: 2rem;
+}
+
+.module-card {
+  background-color: #171717; /* subtle dark grey */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* light grey border */
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.module-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.module-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.module-icon i {
+  color: var(--primary-yellow);
+  font-size: 1.8rem;
+}
+
+.module-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.module-number {
+  color: var(--primary-yellow);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.module-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.module-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.module-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.text-yellow {
+  color: var(--primary-yellow);
+  font-size: 1.1rem;
+  margin-top: 0.2rem; /* align correctly with text */
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .curriculum-grid {
+    grid-template-columns: 1fr;
+  }
+  .curriculum-heading {
+    font-size: 2.8rem;
+  }
+}
+
+/* --- Section 6: Before vs After Section --- */
+.before-after-section {
+  padding: 3rem 0;
+  background-color: #161616; /* Same dark grey to separate sections */
+}
+
+.ba-heading {
+  font-size: 3.6rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+}
+
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 1rem;
+}
+
+.ba-card {
+  position: relative;
+  border-radius: 12px;
+  padding: 4rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ba-card-red {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(26, 10, 10, 0.6) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.ba-card-yellow {
+  background: linear-gradient(135deg, rgba(255, 193, 7, 0.08) 0%, rgba(26, 22, 0, 0.6) 100%);
+  border: 1px solid rgba(255, 193, 7, 0.15);
+}
+
+.ba-badge {
+  position: absolute;
+  top: -22px;
+  left: 3rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.badge-red {
+  background-color: #3b0d0f; /* Dark reddish brown */
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badge-yellow {
+  background-color: #2b2507; /* Dark yellowish olive */
+  color: var(--primary-yellow);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ba-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ba-list li {
+  display: flex;
+  align-items: center; /* keep centered vertically for single line */
+  gap: 1.2rem;
+  font-size: 1.15rem;
+  color: #fff;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.icon-red-dark {
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+.icon-yellow-dark {
+  background-color: rgba(255, 193, 7, 0.15);
+  color: var(--primary-yellow);
+}
+
+@media (max-width: 800px) {
+  .ba-grid {
+    grid-template-columns: 1fr;
+    gap: 4.5rem; /* More gap for the overlapping badge spacing */
+  }
+}
