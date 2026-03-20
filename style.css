@@ -371,6 +371,7 @@ body {
   line-height: 1.1;
   margin-bottom: 2.5rem;
   letter-spacing: -0.5px;
+   
 }
 
 .familiar-grid {
@@ -863,3 +864,106 @@ body {
     gap: 4.5rem; /* More gap for the overlapping badge spacing */
   }
 }
+
+/* --- Section 7: Outcomes Section --- */
+.outcomes-section {
+  padding: 3rem 0;
+  background-color: var(--bg-dark); /* black */
+}
+
+.container-outcomes {
+  align-items: center;
+}
+
+.Workshop{
+    width: 900px;
+    margin-bottom: 1.5rem;
+}
+
+.outcomes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 1rem;
+}
+
+.outcome-bar {
+  background-color: #1a1600;
+  border: 1px solid rgba(255, 193, 7, 0.4);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.outcome-bar i {
+  color: var(--primary-yellow);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.outcome-bar p {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.conclusion-box {
+  background-color: #1a1600;
+  border: 1px solid rgba(255, 193, 7, 0.4);
+  border-radius: 12px;
+  padding: 2rem 2rem 3rem;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.conclusion-title {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.status-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.status-pill {
+  border: 1px solid rgba(255, 193, 7, 0.6);
+  padding: 0.5rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  color: #e5e5e5;
+  background-color: transparent;
+}
+
+.conclusion-statement {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 600px) {
+  .conclusion-statement {
+    font-size: 1.8rem;
+  }
+  .status-pill {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
