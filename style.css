@@ -147,7 +147,7 @@ body {
 
 /* Left: Video */
 .video-container {
-    flex: 1.2;
+    flex: 1;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -197,18 +197,18 @@ body {
 
 /* Right: Info Cards */
 .info-cards {
-    flex: 0.8;
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
-    align-content: stretch;
+    align-content: center;
 }
 
 .info-card {
     background-color: #1a1600; /* Dark brownish tint */
     border: 1px solid rgba(255, 193, 7, 0.4);
     border-radius: 8px;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1.2rem;
     display: flex;
     align-items: center;
     gap: 1rem;
