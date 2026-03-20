@@ -82,29 +82,32 @@ body {
   color: #e5e5e5;
 }
 
-/* Category Chips */
-.categories {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  max-width: 1200px;
+/* Category Chips (Auto-sliding Marquee) */
+.categories-wrapper {
   width: 100%;
-  overflow-x: auto;
-  padding-bottom: 0.5rem; /* Space for hidden scrollbar */
-  scrollbar-width: none; /* Hide scrollbar Firefox */
-  -ms-overflow-style: none; /* Hide scrollbar IE/Edge */
+  max-width: 1200px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+  /* Optional faded edges for a sleek look */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
-.categories::-webkit-scrollbar {
-  display: none; /* Hide scrollbar Chrome/Safari */
+.categories-track {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+  animation: scrollMarquee 25s linear infinite;
 }
 
-@media (min-width: 901px) {
-  .categories {
-    justify-content: center;
-  }
+.categories-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 0.5rem)); }
 }
 
 .category-chip {
@@ -392,8 +395,8 @@ body {
   .btn-title {
     font-size: 1.2rem;
   }
-  .categories {
-    margin-bottom: 1rem; /* keep centered on desktop where it probably doesn't overflow */
+  .categories-wrapper {
+    margin-bottom: 1rem; 
   }
 }
 
@@ -1254,7 +1257,7 @@ body {
 }
 
 .faq-question i {
-  color: #000; /* Black icon to match screenshot */
+  color: #f6f4f4; /* Black icon to match screenshot */
   font-size: 1.5rem;
   transition: transform 0.3s ease;
 }
@@ -1341,6 +1344,7 @@ body {
 @media (max-width: 900px) {
   .sub-heading {
     font-size: 1.2rem;
+      margin-bottom: 1rem;
   }
   .category-chip {
     padding: 0.5rem 1.5rem;
