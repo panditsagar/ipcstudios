@@ -258,9 +258,9 @@ body {
 }
 
 .cta-button {
-    background: linear-gradient(90deg, #ed2e33 0%, #b31115 50%, #ed2e33 100%);
-    background-size: 200% auto;
-    animation: gradientMove 3s linear infinite, shakeLeftRight 2.5s ease-in-out infinite;
+    background: linear-gradient(-45deg, #ed2e33, #8a060a, #ed2e33, #8a060a);
+    background-size: 300% 300%;
+    animation: gradientMove 4s ease infinite, shakeLeftRight 2.5s ease-in-out infinite;
     color: white;
     border: none;
     border-radius: 8px;
@@ -283,7 +283,8 @@ body {
 
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
-    100% { background-position: 200% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 @keyframes shakeLeftRight {
@@ -335,5 +336,108 @@ body {
     
     .btn-title {
         font-size: 1.2rem;
+    }
+}
+
+/* --- Section 2: Familiar Section --- */
+.familiar-section {
+    padding: 3rem 0;
+    background-color: #111; /* Slightly lighter dark background to differentiate sections */
+}
+
+/* Override container properties just for this section if needed */
+.container-familiar {
+    align-items: center;
+}
+
+.section-heading {
+    font-size: 3.4rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 2.5rem;
+    letter-spacing: -0.5px;
+}
+
+.familiar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1150px;
+    margin-bottom: 2rem;
+}
+
+.familiar-card {
+    background-color: #1a1600;
+    border: 1px solid rgba(255, 193, 7, 0.4);
+    border-radius: 12px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.familiar-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.1);
+}
+
+.familiar-card i {
+    color: var(--primary-yellow);
+    font-size: 1.4rem;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+}
+
+.familiar-card p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.highlight-box {
+    background-color: #1a1600;
+    border: 1px solid rgba(255, 193, 7, 0.4);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.highlight-box .box-main {
+    font-size: 1.35rem;
+    color: #fff;
+    
+    font-weight: 500;
+}
+
+.highlight-box .box-sub {
+    font-size: 1.15rem;
+    color: var(--primary-yellow);
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .section-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .familiar-grid {
+        grid-template-columns: 1fr;
+    }
+    .familiar-card {
+        padding: 1.5rem;
+    }
+    .section-heading {
+        font-size: 2.2rem;
     }
 }
