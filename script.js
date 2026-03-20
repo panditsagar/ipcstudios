@@ -27,4 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // FAQ Accordion Logic
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            
+            // Toggle active class on clicked item
+            faqItem.classList.toggle('active');
+            
+            // Optional: Close other open items
+            faqQuestions.forEach(otherQuestion => {
+                if (otherQuestion !== question) {
+                    otherQuestion.parentElement.classList.remove('active');
+                }
+            });
+        });
+    });
 });
+
