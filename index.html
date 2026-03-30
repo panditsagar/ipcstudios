@@ -14,227 +14,258 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero-section">
-        <div class="container">
+    <header class="hero-section" style="background: url('/bg-heart.png') center/cover no-repeat; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 3.5rem;">
+        <div class="container" style="max-width: 1100px;">
+            
             <!-- Top Badge -->
-            <div class="top-badge">
-                <i class="fa-solid fa-camera"></i> India Photographer's Club
+            <div class="top-badge" style="background-color: rgba(255,255,255,0.1); border: 2px dotted var(--primary-pink); color: #fff; padding: 0.5rem 1.5rem; border-radius: 50px; font-weight: 500; font-size: 0.95rem; text-align: center; margin-bottom: 2rem;">
+                Feeling stuck in a marriage where you're always adjusting but never truly seen?
             </div>
             
             <!-- Main Heading -->
-            <h1 class="main-heading">
-                Turn Your Photography Skills Into a <span class="highlight">Real, Consistent Business</span>
+            <h1 class="main-heading" style="margin-bottom: 1rem; font-size: 3.2rem;">
+                TRANSFORM YOUR <span style="color: var(--primary-pink);">MARRIAGE</span>
             </h1>
             
             <!-- Subheading -->
-            <p class="sub-heading">
-                Learn How Photographers Across India Are Making <span class="highlight">₹ 1-3 Lakh/Month</span> Profits By Fixing <span class="highlight">Clients, Pricing, And Business Systems</span>, Not By Changing Cameras Or Editing Styles.
+            <h2 class="sub-heading" style="font-weight: 600; font-size: 1.5rem; color: #fff; max-width: 900px; margin: 0 auto 1.5rem auto; line-height: 1.3;">
+                Without Drama, Fights, or Therapy- even if He doesn't want to change OR In-laws don't support you
+            </h2>
+
+            <!-- Paragraphs -->
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 1rem auto; color: #f0f0f0; font-size: 1.15rem; line-height: 1.6;">
+                A free masterclass for working married women who feel stuck, unseen, or unheard—to help you reconnect, reset, and reclaim emotional power in your marriage.
+            </p>
+            <p style="text-align: center; max-width: 950px; margin: 0 auto 3rem auto; color: #f0f0f0; font-size: 1.15rem; line-height: 1.6;">
+                In this free 90-minute live masterclass, you'll discover how to create emotional connection, set guilt-free boundaries, and reclaim your identity—without blaming, begging, or breaking your marriage. Whether you're silently suffering or emotionally exhausted, this session will show you a fresh, powerful path to feel seen, respected, and deeply connected again.
             </p>
             
-            <!-- Category Chips (Auto-Sliding Marquee) -->
-            <div class="categories-wrapper">
-                <div class="categories-track">
-                    <!-- Set 1 -->
-                    <span class="category-chip"><i class="fa-solid fa-heart"></i> Wedding</span>
-                    <span class="category-chip"><i class="fa-solid fa-person-pregnant"></i> Maternity</span>
-                    <span class="category-chip"><i class="fa-solid fa-child"></i> Kids</span>
-                    <span class="category-chip"><i class="fa-solid fa-box"></i> Product</span>
-                    <span class="category-chip"><i class="fa-solid fa-building"></i> Corporate</span>
-                    <span class="category-chip"><i class="fa-solid fa-city"></i> Architecture</span>
-                    
-                    <!-- Set 2 (Duplicate for seamless loop) -->
-                    <span class="category-chip"><i class="fa-solid fa-heart"></i> Wedding</span>
-                    <span class="category-chip"><i class="fa-solid fa-person-pregnant"></i> Maternity</span>
-                    <span class="category-chip"><i class="fa-solid fa-child"></i> Kids</span>
-                    <span class="category-chip"><i class="fa-solid fa-box"></i> Product</span>
-                    <span class="category-chip"><i class="fa-solid fa-building"></i> Corporate</span>
-                    <span class="category-chip"><i class="fa-solid fa-city"></i> Architecture</span>
-                </div>
-            </div>
-            
-            <!-- Requirements / Pointers -->
-            <div class="requirements">
-                <span class="req-item"><i class="fa-solid fa-ban text-red"></i> No marketing knowledge required</span>
-                <span class="req-item"><i class="fa-solid fa-ban text-red"></i> No business experience required</span>
-            </div>
-            
             <!-- Hero Content: Video & Info Cards -->
-            <div class="hero-content">
-                <!-- Video Container (Left) -->
-           <div class="video-container" id="video-container">
-  <div
-    class="video-thumbnail"
-    id="video-thumbnail"
-    data-video-url="https://www.youtube.com/embed/8TZMtslA3UY"
-  >
-    <img src="/thumb.webp" alt="Video Placeholder" id="video-placeholder">
-    <div class="play-button" id="play-button">
-      <i class="fa-solid fa-play"></i>
-    </div>
-  </div>
-</div>
+            <div class="hero-content" style="align-items: flex-start; gap: 2.5rem; margin-bottom: 0;">
                 
-                <!-- Info Cards (Right) -->
-                <div class="info-cards">
-                    <div class="info-card">
-                        <div class="icon-wrapper"><i class="fa-regular fa-calendar" style="color:#000;"></i></div>
-                        <div class="card-text">
-                            <span class="label">Dates</span>
-                            <span class="value">25th & 26th Mar</span>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="icon-wrapper"><i class="fa-regular fa-clock" style="color:#000;"></i></div>
-                        <div class="card-text">
-                            <span class="label">Time</span>
-                            <span class="value">11:00 AM</span>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="icon-wrapper"><i class="fa-solid fa-hourglass-half" style="color:#000;"></i></div>
-                        <div class="card-text">
-                            <span class="label">Duration</span>
-                            <span class="value">3 Hours</span>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <div class="icon-wrapper"><i class="fa-solid fa-video" style="color:#000;"></i></div>
-                        <div class="card-text">
-                            <span class="label">LIVE</span>
-                            <span class="value">on Zoom</span>
+                <!-- Video Container (Left) -->
+                <div class="video-container" id="video-container" style="flex: 1.3; border-radius: 12px; border: none;">
+                    <div class="video-thumbnail" id="video-thumbnail" data-video-url="https://youtu.be/Zon6whJx6T4?si=zqFPplVx54VmeS5V" style="min-height: 320px; border-radius: 12px;">
+                        <img src="/image.png" alt="Video Placeholder" id="video-placeholder" style="border-radius: 12px;">
+                        <div class="play-button" id="play-button" style="background-color: #ff0000; border-radius: 8px; width: 65px; height: 45px;">
+                            <i class="fa-solid fa-play" style="font-size: 1.2rem;"></i>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Info Cards & Timer (Right) -->
+                <div class="info-section" style="flex: 1; display: flex; flex-direction: column; gap: 2.5rem;">
+                    
+                    <div class="info-cards" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <!-- Date -->
+                        <div class="info-card" style="background: transparent; border: 1px solid rgba(233,79,133,0.5); padding: 1rem; border-radius: 8px; gap: 0.8rem; box-shadow: none;">
+                            <div class="icon-wrapper" style="background-color: var(--primary-pink); width: 40px; height: 40px; border-radius: 8px;">
+                                <i class="fa-regular fa-calendar" style="color:#fff; font-size: 1.1rem;"></i>
+                            </div>
+                            <div class="card-text">
+                                <span class="label" style="font-size: 0.8rem;">Date</span>
+                                <span class="value" style="font-size: 0.95rem;">30 July</span>
+                            </div>
+                        </div>
+
+                        <!-- Time -->
+                        <div class="info-card" style="background: transparent; border: 1px solid rgba(233,79,133,0.5); padding: 1rem; border-radius: 8px; gap: 0.8rem; box-shadow: none;">
+                            <div class="icon-wrapper" style="background-color: var(--primary-pink); width: 40px; height: 40px; border-radius: 8px;">
+                                <i class="fa-solid fa-hourglass-start" style="color:#fff; font-size: 1.1rem;"></i>
+                            </div>
+                            <div class="card-text">
+                                <span class="label" style="font-size: 0.8rem;">Time</span>
+                                <span class="value" style="font-size: 0.95rem;">07:00 PM</span>
+                            </div>
+                        </div>
+
+                        <!-- Language -->
+                        <div class="info-card" style="background: transparent; border: 1px solid rgba(233,79,133,0.5); padding: 1rem; border-radius: 8px; gap: 0.8rem; box-shadow: none;">
+                            <div class="icon-wrapper" style="background-color: var(--primary-pink); width: 40px; height: 40px; border-radius: 8px;">
+                                <i class="fa-solid fa-language" style="color:#fff; font-size: 1.1rem;"></i>
+                            </div>
+                            <div class="card-text">
+                                <span class="label" style="font-size: 0.8rem;">Language</span>
+                                <span class="value" style="font-size: 0.95rem;">English</span>
+                            </div>
+                        </div>
+
+                        <!-- Live -->
+                        <div class="info-card" style="background: transparent; border: 1px solid rgba(233,79,133,0.5); padding: 1rem; border-radius: 8px; gap: 0.8rem; box-shadow: none;">
+                            <div class="icon-wrapper" style="background-color: var(--primary-pink); width: 40px; height: 40px; border-radius: 8px;">
+                                <i class="fa-solid fa-video" style="color:#fff; font-size: 1.1rem;"></i>
+                            </div>
+                            <div class="card-text">
+                                <span class="label" style="font-size: 0.8rem;">Live</span>
+                                <span class="value" style="font-size: 0.95rem;">On Zoom</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timer (3 blocks) -->
+                    <div class="timer-blocks" style="display: flex; gap: 1rem;">
+                        <div class="timer-box" style="flex:1; background-color: var(--primary-pink); border-radius: 8px; padding: 1rem 0; text-align: center; color: #fff; box-shadow: 0 4px 15px rgba(233,79,133,0.3);">
+                            <div id="hero-hours" style="font-size: 1.5rem; font-weight: 700; line-height: 1;">00</div>
+                            <div style="font-size: 0.85rem; font-weight: 500; margin-top: 0.2rem;">Hours</div>
+                        </div>
+                        <div class="timer-box" style="flex:1; background-color: var(--primary-pink); border-radius: 8px; padding: 1rem 0; text-align: center; color: #fff; box-shadow: 0 4px 15px rgba(233,79,133,0.3);">
+                            <div id="hero-minutes" style="font-size: 1.5rem; font-weight: 700; line-height: 1;">09</div>
+                            <div style="font-size: 0.85rem; font-weight: 500; margin-top: 0.2rem;">Minutes</div>
+                        </div>
+                        <div class="timer-box" style="flex:1; background-color: var(--primary-pink); border-radius: 8px; padding: 1rem 0; text-align: center; color: #fff; box-shadow: 0 4px 15px rgba(233,79,133,0.3);">
+                            <div id="hero-seconds" style="font-size: 1.5rem; font-weight: 700; line-height: 1;">27</div>
+                            <div style="font-size: 0.85rem; font-weight: 500; margin-top: 0.2rem;">Seconds</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             
-            <!-- CTA Button -->
-            <div class="cta-container">
+            <!-- Big Bottom CTA -->
+         <!-- CTA Button -->
+            <div class="cta-container" style="margin-top: 2rem;">
                 <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
+                    <span class="btn-title">Register FREE (For Married Women) >></span>
+                    <span class="btn-subtitle">👉 Yes, I Want to Change!</span>
                 </button>
             </div>
+            
         </div>
     </header>
 
-    <!-- Section 2: Familiar Section -->
+    <!-- Section 2: Familiar Section / Who Is It For -->
     <section class="familiar-section">
         <div class="container container-familiar">
             <h2 class="section-heading">
-                Be Honest — Which of These<br>
-                <span class="highlight">Feels Familiar?</span>
+                Who <span class="highlight">Is it for?</span>
             </h2>
+            <p class="box-sub">This masterclass is ONLY for the MARRIED WOMAN with TRADITIONAL MARRIAGES who:</p>
 
-            <!-- Grid of 6 Cards -->
+            <!-- Grid of 9 Cards -->
             <div class="familiar-grid">
                 <div class="familiar-card">
-                    <i class="fa-regular fa-circle-dot"></i>
-                    <p>You know photography, but clients don't come consistently</p>
+                    <i class="fa-solid fa-check"></i>
+                    <p>Feels exhausted trying to make things work while he puts zero effort.</p>
                 </div>
                 <div class="familiar-card">
-                    <i class="fa-solid fa-ghost"></i>
-                    <p>Clients bargain, ghost, or say "budget kam hai"</p>
+                    <i class="fa-solid fa-check"></i>
+                    <p>Is constantly walking on eggshells to avoid triggering his anger.</p>
                 </div>
                 <div class="familiar-card">
-                    <i class="fa-regular fa-circle-question"></i>
-                    <p>You don't know where to find clients (Instagram? WhatsApp? referrals?)</p>
+                    <i class="fa-solid fa-check"></i>
+                    <p>Feels like her opinions and feelings are constantly invalidated.</p>
                 </div>
                 <div class="familiar-card">
-                    <i class="fa-solid fa-arrow-trend-down"></i>
-                    <p>You're doing random shoots but no stable income</p>
+                    <i class="fa-solid fa-check"></i>
+                    <p>Struggles with interfering in-laws who control her marriage.</p>
                 </div>
                 <div class="familiar-card">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <p>You feel awkward or underconfident while talking about price</p>
+                    <i class="fa-solid fa-check"></i>
+                    <p>Is financially dependent and feels trapped in the relationship.</p>
                 </div>
                 <div class="familiar-card">
-                    <i class="fa-solid fa-book-skull"></i>
-                    <p>You bought a camera… but no one gave you the business manual</p>
+                    <i class="fa-solid fa-check"></i>
+                    <p>Wants to save the marriage without losing her self-respect.</p>
+                </div>
+                <div class="familiar-card">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Is tired of the silent treatments and emotional unavailability.</p>
+                </div>
+                <div class="familiar-card">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Feels unloved, unappreciated and taken for granted.</p>
+                </div>
+                <div class="familiar-card">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Wants to create a peaceful environment for her children.</p>
+                </div>
+                 <div class="familiar-card">
+                    <i class="fa-solid fa-check"></i>
+                    <p>If ANY of this sounds like you, this masterclass is exactly what you need.</p>
                 </div>
             </div>
 
-            <!-- Highlight Box -->
-            <div class="highlight-box">
-                <p class="box-main">📌 Nobody teaches photographers how to run a business.</p>
-                <p class="box-sub">That's exactly why most talented photographers struggle.</p>
-            </div>
+          
 
             <!-- CTA Button -->
             <div class="cta-container" style="margin-top: 2rem;">
-                <!-- Reusing the exact same CTA button style -->
                 <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
+                    <span class="btn-title">Register FREE (For Married Women) >></span>
+                    <span class="btn-subtitle">👉 Yes, I Want to Change!</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Section 3: Who This Program Is For -->
+    <!-- Section 3: "What Are You Going To Learn?" -->
     <section class="who-section">
         <div class="container container-who">
             <h2 class="section-heading">
-                Who This <span class="highlight">Program Is For</span>
+                What are you going to <span class="highlight">Learn?</span>
             </h2>
+            <p class="box-sub" style="text-align: center; margin-bottom: 2rem; font-weight: bold;">Break free and Build bliss</p>
 
             <div class="who-grid-wrapper">
                 <!-- Card 1 -->
                 <div class="who-card">
-                    <div class="card-img">
-                        <img src="/1.webp" alt="Wedding Photographers & Filmmakers">
-                    </div>
+                    <div class="card-img"><img src="/1.webp" alt="Emotional Connection" style="width: 100%; border-radius: 8px;"></div>
                     <div class="card-content">
-                        <h3>Wedding Photographers & Filmmakers</h3>
-                        <p>Creating memorable moments for couples</p>
+                        <h3 class="highlight">Emotional Connection</h3>
+                        <p><strong>Stop The Arguments</strong></p>
+                        <p>Build the intimacy you crave and stop feeling like a roommate in your own home.</p>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="who-card">
-                    <div class="card-img">
-                        <img src="/2.webp" alt="Maternity, Portrait & Lifestyle">
-                    </div>
+                    <div class="card-img"><img src="/2.webp" alt="Communication Error" style="width: 100%; border-radius: 8px;"></div>
                     <div class="card-content">
-                        <h3>Maternity, Portrait & Lifestyle</h3>
-                        <p>Capturing life's beautiful transitions</p>
+                        <h3 class="highlight">Communication Error</h3>
+                        <p><strong>Speak, so He Listens</strong></p>
+                        <p>End the silent treatments and repetitive arguments that drain your energy.</p>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="who-card">
-                    <div class="card-img">
-                        <img src="/3.webp" alt="Fashion, Editorial & Commercial">
-                    </div>
+                    <div class="card-img"><img src="/3.webp" alt="Respect Pillar" style="width: 100%; border-radius: 8px;"></div>
                     <div class="card-content">
-                        <h3>Fashion, Editorial & Commercial</h3>
-                        <p>Building brand narratives through visuals</p>
+                        <h3 class="highlight">Respect Pillar</h3>
+                        <p><strong>Command Respect & Value</strong></p>
+                        <p>Establish firm boundaries and command the respect you truly deserve.</p>
                     </div>
                 </div>
                 <!-- Card 4 -->
                 <div class="who-card">
-                    <div class="card-img">
-                        <img src="/4.webp" alt="Product, Food, Brand Photography">
-                    </div>
+                    <div class="card-img"><img src="/4.webp" alt="Ego-Match Reverse" style="width: 100%; border-radius: 8px;"></div>
                     <div class="card-content">
-                        <h3>Product, Food, Brand Photography</h3>
-                        <p>Elevating products with stunning imagery</p>
+                        <h3 class="highlight">Ego-Match Reverse</h3>
+                        <p><strong>Manage His Insecurity</strong></p>
+                        <p>Navigate his ego without compromising your self-worth and inner peace.</p>
                     </div>
                 </div>
-                <!-- Card 5 -->
+                <!-- Card 5 (Large left) -->
                 <div class="who-card">
-                    <div class="card-img">
-                        <img src="/5.webp" alt="Solo Filmmakers & Studio Owners">
-                    </div>
+                    <div class="card-img"><img src="/5.webp" alt="Emotion Overload Shield" style="width: 100%; border-radius: 8px;"></div>
                     <div class="card-content">
-                        <h3>Solo Filmmakers & Studio Owners</h3>
-                        <p>Growing sustainable creative businesses</p>
+                        <h3 class="highlight">Emotion Overload Shield</h3>
+                        <p><strong>Stop Overthinking</strong></p>
+                        <p>A step-by-step psychological roadmap to protect your emotional sanctuary & overcome anxiety.</p>
+                    </div>
+                </div>
+                <!-- Card 6 (Large right) -->
+                <div class="who-card">
+                    <div class="card-img"><img src="/6.webp" alt="Connection Revival Map" style="width: 100%; border-radius: 8px;"></div>
+                    <div class="card-content">
+                        <h3 class="highlight">Connection Revival Map</h3>
+                        <p><strong>Reignite The Passion</strong></p>
+                        <p>A complete structured path to bring back the forgotten love & friendship.</p>
                     </div>
                 </div>
             </div>
-               <!-- CTA Button -->
+            <!-- CTA Button -->
             <div class="cta-container" style="margin-top: 2rem;">
-                <!-- Reusing the exact same CTA button style -->
                 <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
+                    <span class="btn-title">Register FREE (For Married Women) >></span>
+                    <span class="btn-subtitle">👉 Yes, I Want to Change!</span>
                 </button>
             </div>
         </div>
@@ -248,34 +279,41 @@
                 <i class="fa-regular fa-lightbulb"></i> Solution
             </div>
 
-            <!-- Main Heading -->
+    <!-- Section 4: Why You Must Attend -->
+    <section class="solution-section">
+        <div class="container container-solution">
             <h2 class="section-heading solution-heading">
-                This is NOT Another Motivation Talk <span class="highlight">or Photography Class</span>
+                Why <span class="highlight">You Must Attend?</span>
             </h2>
 
-            <!-- Subheading -->
-            <p class="solution-subheading">
-                This is a BUSINESS WORKSHOP.
-            </p>
-
-            <!-- Comparison Grid -->
+            <!-- Comparison Grid adapted for 4 Items -->
             <div class="comparison-grid">
-                <!-- Left Card (NOT Learn) -->
+                
                 <div class="compare-card">
-                    <h3 class="compare-title">You will <span class="text-red-title">NOT</span> learn:</h3>
+                    <h3 class="compare-title">CLARITY</h3>
                     <ul class="compare-list">
-                        <li><span class="icon-circle icon-not"><i class="fa-solid fa-xmark"></i></span> Editing</li>
-                        <li><span class="icon-circle icon-not"><i class="fa-solid fa-xmark"></i></span> Camera Setting</li>
-                        <li><span class="icon-circle icon-not"><i class="fa-solid fa-xmark"></i></span> Presets</li>
-                        <li><span class="icon-circle icon-not"><i class="fa-solid fa-xmark"></i></span> Shooting Styles</li>
+                        <li><span class="icon-circle icon-will"><i class="fa-solid fa-check"></i></span> Stop letting fear control your daily interactions and get clear.</li>
+                    </ul>
+                </div>
+                
+                <div class="compare-card">
+                    <h3 class="compare-title">RELIEF</h3>
+                    <ul class="compare-list">
+                        <li><span class="icon-circle icon-will"><i class="fa-solid fa-check"></i></span> Transform from feeling helpless to confident and secure.</li>
                     </ul>
                 </div>
 
-                <!-- Right Card (WILL Learn) -->
                 <div class="compare-card">
-                    <h3 class="compare-title">You <span class="text-yellow-title">WILL</span> learn:</h3>
+                    <h3 class="compare-title">GROWTH</h3>
                     <ul class="compare-list">
-                        <li><span class="icon-circle icon-will"><i class="fa-solid fa-check"></i></span> How photography actually becomes a business that pays you</li>
+                        <li><span class="icon-circle icon-will"><i class="fa-solid fa-check"></i></span> Evolve into the best version of yourself without sacrificing your needs.</li>
+                    </ul>
+                </div>
+
+                <div class="compare-card">
+                    <h3 class="compare-title">CONNECTION</h3>
+                    <ul class="compare-list">
+                        <li><span class="icon-circle icon-will"><i class="fa-solid fa-check"></i></span> Rebuild the lost emotional bridge and mutual respect.</li>
                     </ul>
                 </div>
             </div>
@@ -283,48 +321,42 @@
             <!-- CTA Button -->
             <div class="cta-container" style="margin-top: 1rem;">
                 <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
+                    <span class="btn-title">Register FREE (For Married Women) >></span>
+                    <span class="btn-subtitle">👉 Yes, I Want to Change!</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Section 5: Curriculum Section -->
+    <!-- Section 5: Here is What You Get -->
     <section class="curriculum-section">
         <div class="container container-curriculum">
-            <!-- Top Badge Centered -->
-            <div class="top-badge badge-center">
-                <i class="fa-regular fa-lightbulb"></i> Workshop Curriculum
-            </div>
 
             <!-- Main Heading -->
             <h2 class="section-heading curriculum-heading">
-                What You Will <span class="highlight">Learn</span>
+                Here is <span class="highlight">WHAT YOU GET</span>
             </h2>
 
             <!-- Subheading -->
             <p class="curriculum-subheading">
-                In this 3-hour workshop, you'll get the complete photography business blueprint
+                Immediate access to the tools needed to reclaim love, respect, and connection.
             </p>
 
-            <!-- Grid of 4 Modules -->
+            <!-- Grid of 3 Modules -->
             <div class="curriculum-grid">
                 <!-- Module 01 -->
                 <div class="module-card">
                     <div class="module-header">
                         <div class="module-icon">
-                            <i class="fa-solid fa-rocket"></i>
+                            <i class="fa-solid fa-video"></i>
                         </div>
                         <div class="module-title-wrap">
-                            <span class="module-number">Module 01</span>
-                            <h3 class="module-title">How to START Your Photography Business (Properly)</h3>
+                            <span class="module-number">Offer 01</span>
+                            <h3 class="module-title">VIP LIVE Access</h3>
                         </div>
                     </div>
                     <ul class="module-list">
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to choose the right photography niche/category</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to position yourself so clients understand what you offer at what price</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> The biggest mistake photographers make when starting their business</li>
+                        <li><i class="fa-regular fa-circle-check text-yellow"></i> 3 hours of intense, no-fluff learning directly from Mrunali Manish.</li>
                     </ul>
                 </div>
 
@@ -332,17 +364,15 @@
                 <div class="module-card">
                     <div class="module-header">
                         <div class="module-icon">
-                            <i class="fa-solid fa-bullseye"></i>
+                            <i class="fa-solid fa-book"></i>
                         </div>
                         <div class="module-title-wrap">
-                            <span class="module-number">Module 02</span>
-                            <h3 class="module-title">CLIENT ACQUISITION SYSTEM (CORE MODULE)</h3>
+                            <span class="module-number">Offer 02</span>
+                            <h3 class="module-title">Work Book PDF</h3>
                         </div>
                     </div>
                     <ul class="module-list">
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> Where photography clients actually come from in India</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to attract &amp; get clients using the Laser Target Marketing System</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to build a simple, repeatable client system that works in any niche</li>
+                        <li><i class="fa-regular fa-circle-check text-yellow"></i> A step-by-step practical manual to apply the frameworks to your life immediately.</li>
                     </ul>
                 </div>
 
@@ -350,157 +380,49 @@
                 <div class="module-card">
                     <div class="module-header">
                         <div class="module-icon">
-                            <i class="fa-solid fa-rocket"></i>
+                            <i class="fa-solid fa-comments"></i>
                         </div>
                         <div class="module-title-wrap">
-                            <span class="module-number">Module 03</span>
-                            <h3 class="module-title">How to CONVERT Clients Confidently</h3>
+                            <span class="module-number">Offer 03</span>
+                            <h3 class="module-title">Live Q&A Network</h3>
                         </div>
                     </div>
                     <ul class="module-list">
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to talk to clients without fear or hesitation</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to handle "budget kam hai" conversations</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to price your work logically (not emotionally)</li>
+                        <li><i class="fa-regular fa-circle-check text-yellow"></i> Get your personal, specific marriage questions answered by the expert.</li>
                     </ul>
                 </div>
+            </div>
 
-                <!-- Module 04 -->
-                <div class="module-card">
-                    <div class="module-header">
-                        <div class="module-icon">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <div class="module-title-wrap">
-                            <span class="module-number">Module 04</span>
-                            <h3 class="module-title">How to GROW Without Burning Out</h3>
-                        </div>
-                    </div>
-                    <ul class="module-list">
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to move from random work to stable income</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> How to think like a business owner, not a freelancer</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> The right order: clients &rarr; systems &rarr; team &rarr; scale</li>
-                        <li><i class="fa-regular fa-circle-check text-yellow"></i> BIG 7 Mistakes why most photographers fail when they try to scale</li>
-                    </ul>
+            <div class="countdown-wrapper" style="text-align: center; margin-top: 2rem;">
+                <p style="font-weight: 600; color: #fff;">Live Webinar | Registration Closes Soon</p>
+                <div class="timer-display" style="font-size: 2.5rem; font-weight: 700; color: #ffc107;">
+                    05 : 23 : 07 : 26
                 </div>
             </div>
 
             <!-- CTA Button -->
             <div class="cta-container" style="margin-top: 1rem;">
                 <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
+                    <span class="btn-title">Register FREE (For Married Women) >></span>
+                    <span class="btn-subtitle">👉 Yes, I Want to Change!</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Section 6: Before vs After Section -->
-    <section class="before-after-section">
-        <div class="container container-before-after">
-            <!-- Main Heading -->
-            <h2 class="section-heading ba-heading">
-                <span class="highlight">BEFORE</span> vs <span class="highlight">AFTER</span> This Workshop
-            </h2>
+    <!-- Sections Removed to Match Screenshot -->
 
-            <div class="ba-grid">
-                <!-- BEFORE Card -->
-                <div class="ba-card ba-card-red">
-                    <div class="ba-badge badge-red">BEFORE</div>
-                    <ul class="ba-list">
-                        <li><span class="icon-circle icon-red-dark"><i class="fa-solid fa-xmark"></i></span> Random shoots, no consistency</li>
-                        <li><span class="icon-circle icon-red-dark"><i class="fa-solid fa-xmark"></i></span> Confused about where clients come from</li>
-                        <li><span class="icon-circle icon-red-dark"><i class="fa-solid fa-xmark"></i></span> Undercharging or getting bargained</li>
-                        <li><span class="icon-circle icon-red-dark"><i class="fa-solid fa-xmark"></i></span> Feeling stuck despite good skills</li>
-                        <li><span class="icon-circle icon-red-dark"><i class="fa-solid fa-xmark"></i></span> No clear roadmap</li>
-                    </ul>
-                </div>
-
-                <!-- AFTER Card -->
-                <div class="ba-card ba-card-yellow">
-                    <div class="ba-badge badge-yellow"><i class="fa-solid fa-check"></i> AFTER</div>
-                    <ul class="ba-list">
-                        <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> Clear client acquisition direction</li>
-                        <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> Confidence while talking to clients</li>
-                        <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> Logical pricing mindset</li>
-                        <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> Predictable booking flow</li>
-                        <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> A solid foundation to grow &amp; scale</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- CTA Button -->
-            <div class="cta-container" style="margin-top: 2rem;">
-                <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 7: Outcomes Section -->
-    <section class="outcomes-section">
-        <div class="container container-outcomes">
-             <!-- Main Heading -->
-            <h2 class="section-heading ba-heading  ">
-                <span  >After Attending This Workshop, <span class="highlight"><br> You Will Have:</span></span> 
-            </h2>
-
-            <!-- List of Promises -->
-            <div class="outcomes-list">
-                <div class="outcome-bar">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Clear clarity on what kind of photography business you should build</p>
-                </div>
-                <div class="outcome-bar">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>A step-by-step idea of how to get your next photography client</p>
-                </div>
-                <div class="outcome-bar">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Confidence to talk to clients and quote your price</p>
-                </div>
-                <div class="outcome-bar">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>A simple roadmap to start and grow your photography business</p>
-                </div>
-                <div class="outcome-bar">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>No more confusion. No more guesswork.</p>
-                </div>
-            </div>
-
-            <!-- Conclusion Box -->
-            <div class="conclusion-box">
-                <p class="conclusion-title">Even if you are:</p>
-                <div class="status-pills">
-                    <span class="status-pill">Just Starting</span>
-                    <span class="status-pill">Stuck for Years</span>
-                    <span class="status-pill">Doing Photography Part-time</span>
-                </div>
-                <h3 class="conclusion-statement">You'll know exactly what to do next.</h3>
-            </div>
-               <!-- CTA Button -->
-            <div class="cta-container" style="margin-top: 2rem;">
-                <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 8: About The Trainer Section -->
+    <!-- Section 6: About The Trainer Section -->
     <section class="trainer-section">
         <div class="container container-trainer">
             <!-- Top Badge Centered -->
             <div class="top-badge badge-center">
-                <i class="fa-solid fa-user"></i> About The Trainer
+                <i class="fa-solid fa-user"></i> About Me
             </div>
 
             <!-- Main Heading -->
             <h2 class="section-heading trainer-heading">
-                Learn from <span class="highlight">Real Experience</span>
+                Meet <span class="highlight">MRUNALI MANISH</span>
             </h2>
 
             <!-- 2-Column Layout -->
@@ -508,120 +430,162 @@
                 <!-- Left: Trainer Image/Graphic -->
                 <div class="trainer-image-wrapper">
                     <!-- Placeholder for the trainer graphic -->
-                    <img src="/image.png" alt="Abdullah Ansari - Trainer" class="trainer-img">
+                    <img src="/image.png" alt="Mrunali Manish" class="trainer-img">
                 </div>
 
                 <!-- Right: Content -->
                 <div class="trainer-content">
                     <h3 class="trainer-title">
-                        Founder of <span class="highlight">India Photographer's Club</span>
+                        Founder of <span class="highlight">The 'Marriage Masterclass'</span>
                     </h3>
                     <p class="trainer-desc">
-                        A community that has helped <span class="highlight">10,000+ photographers</span> across India start, grow, and systemise their photography businesses.
+                        Hi, I'm Mrunali Manish. After coaching hundreds of women in toxic marriages, I realized traditional therapy often doesn't work for Indian marriages because the cultural conditioning is totally different.
+                    </p>
+                    <p class="trainer-desc" style="margin-top: 1rem;">
+                        The reality is, if you try to change Indian men using Western psychology, they will just get more defensive and angry. I developed the Subconscious Remapping Framework specifically for traditional Indian marriages to reverse engineer how the male mind works without fighting, begging, or crying.
                     </p>
 
-                    <!-- Experience Box -->
-                    <div class="experience-box">
-                        <p class="experience-title">I've worked closely with photographers who:</p>
-                        <ul class="ba-list experience-list">
-                            <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> Had talent but no clients</li>
-                            <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> Were undercharging for years</li>
-                            <li><span class="icon-circle icon-yellow-dark"><i class="fa-solid fa-check"></i></span> Didn't know how to grow beyond survival</li>
-                        </ul>
-                    </div>
-
                     <p class="trainer-quote">
-                        "This workshop is built from real struggles, real mistakes, and real solutions — not theory."
+                        "Stop letting people tell you to 'just adjust.' Your life and your happiness matter."
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 9: Pricing / Offer Section -->
+    <!-- Section 7: Pricing / Offer Section -->
     <section class="offer-section">
         <div class="container container-offer">
-            <!-- Top Badge -->
-            <div class="top-badge badge-center">
-                <i class="fa-solid fa-gift"></i> Limited Time Offer
-            </div>
-
-            <!-- Main Heading -->
             <h2 class="section-heading offer-heading">
-                Workshop Fee: <span class="highlight">₹51 Only</span>
+                Ready to <span class="highlight">Join?</span>
             </h2>
 
-            <!-- Subheading -->
-            <p class="offer-subheading">
-                This is not about money. This is about commitment.
-            </p>
-
-            <!-- Offer Box -->
-            <div class="offer-box">
-                <div class="offer-features">
-                    <div class="feature-row">
-                        <span class="offer-feature"><i class="fa-regular fa-clock text-yellow-icon"></i> 3 Hours of Practical Learning</span>
-                        <span class="offer-feature"><i class="fa-solid fa-user-group text-yellow-icon"></i> Join 10,000+ Photographers</span>
-                    </div>
-                    <div class="feature-row">
-                        <span class="offer-feature">Lifetime Recording Access</span>
-                    </div>
-                </div>
-
-                <p class="offer-text">
-                    If you're serious about your photography career,<br>
-                    <span class="highlight">₹51 is a small step to get big clarity.</span>
-                </p>
-
-                <!-- CTA Button -->
-                <button class="cta-button" style="margin-top: 1rem;">
-                    <span class="btn-title small-btn" style="  text-transform: uppercase;">Yes, I Want The Photography Business Manual</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
+            <!-- CTA Button -->
+            <div class="cta-container" style="margin-top: 1rem;">
+                <button class="cta-button" style="width: 100%;">
+                    <span class="btn-title">Register FREE (For Married Women) >></span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- Section 10: FAQ Section -->
+    <!-- Section 8: FAQ Section -->
     <section class="faq-section">
         <div class="container container-faq">
             <!-- Main Heading -->
             <h2 class="section-heading faq-heading">
-                Your Questions Answered
+                FAQs
             </h2>
 
             <!-- FAQ Accordion -->
             <div class="faq-container">
-                <!-- FAQ Item 1 -->
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Q: Is this for wedding photographers only?</span>
-                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Will my husband or in-laws have to attend with me?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>While the business principles are universal, the strategies we discuss are specifically optimized for wedding photography businesses. However, other portrait or commercial photographers can still find immense value.</p>
+                        <p>No. This masterclass is designed specifically for you to implement independently without requiring their participation.</p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 2 -->
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Q: I'm a beginner. Will I understand this?</span>
-                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Will there be a recording?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>Absolutely. The workshop is designed to take you from the very basics to advanced client acquisition systems in a step-by-step, easy-to-understand plain language format.</p>
+                        <p>No, this is a live, interactive session. We highly encourage you to attend live so you can fully participate.</p>
                     </div>
                 </div>
 
-                <!-- FAQ Item 3 -->
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Q: Will there be selling or pressure?</span>
-                        <i class="fa-solid fa-circle-plus"></i>
+                        <span>Is this for newly married or long-time married women?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <div class="faq-answer">
-                        <p>No pressure at all. The primary goal is to provide you with actionable value. While we may mention advanced programs, the core workshop delivers everything promised without holding back.</p>
+                        <p>Both. The principles of emotional connection and boundary-setting apply universally regardless of how long you've been married.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is this like therapy?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. Traditional therapy focuses on the past. This masterclass is action-oriented with practical psychological frameworks you can use immediately.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does your tactics work? I have tried many things before, and nothing helps!</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our approach skips the logical arguments and focuses on Subconscious Remapping to naturally shift emotional triggers and patterns.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I ask questions live?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We have a dedicated Live Q&A segment at the end of the masterclass to answer your specific queries.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will I be forced to share my story during the session?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely not. Your privacy is paramount, and you can participate completely anonymously if you wish.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What language is the session in?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The session is conducted primarily in English and Hinglish to ensure everyone can understand clearly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long is the session?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The masterclass is a concentrated 90-minute immersive training session.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will I get tools to use after?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. You will receive actionable frameworks and a workbook to continue applying what you've learned.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens after the webinar?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We will provide a clear roadmap and options for ongoing support if you wish to work with us further.</p>
                     </div>
                 </div>
             </div>
@@ -629,8 +593,7 @@
             <!-- CTA Button -->
             <div class="cta-container" style="margin-top: 3rem;">
                 <button class="cta-button">
-                    <span class="btn-title">Join India Photographer's Club Workshop</span>
-                    <span class="btn-subtitle">👉 Reserve My Seat for ₹51</span>
+                    <span class="btn-title">Register FREE (For Married Women) >></span>
                 </button>
             </div>
         </div>
@@ -641,13 +604,13 @@
         <div class="footer-disclaimer">
             <div class="container">
                 <p>
-                    This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc. As stipulated by law, we can not and do not make any guarantees about your ability to get results or earn any money with my ideas, information, tools or strategies. I just want to help you by giving great content, direction and strategies that worked well for me and my students and that I believe can help you move forward. All of my terms, privacy policies and disclaimers for this program and website can be accessed via the links. I feel transparency is important and I hold ourselves (you & me) to a high standard of integrity. Thanks for stopping by. I hope this training and content brings you a lot of value & results.
+                    <strong style="color: #ffc107;">Facebook Disclaimer:</strong> The 'Transform Your Marriage' Masterclass and Mrunali Manish are not part of Facebook.com or Facebook Inc. Additionally, this Masterclass is not endorsed by Facebook in any way. Facebook is a trademark of Facebook, Inc. We do not make any guarantees about your ability to get results with our ideas from this program.
                 </p>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <p>&copy; 2026 India Photographer's Club. All rights reserved.</p>
+                <p>&copy; 2026 Mrunali Manish. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -656,11 +619,11 @@
     <div class="sticky-footer">
         <div class="sticky-container">
             <div class="sticky-left">
-                <span class="sticky-title">Limited-Time Bonus</span>
+                <span class="sticky-title">Registration Closes Soon</span>
                 <span class="sticky-timer">Offer Ends in <span id="countdown-timer">02:15</span> Mins</span>
             </div>
             <div class="sticky-right">
-                <button class="sticky-btn">Book Now</button>
+                <button class="sticky-btn">Register FREE >></button>
             </div>
         </div>
     </div>
